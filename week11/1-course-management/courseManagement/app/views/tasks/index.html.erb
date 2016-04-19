@@ -1,0 +1,10 @@
+<h2>Tasks</h2>
+
+
+<ul>
+
+<% @tasks.each do |task| %> <!-- ruby код се пише по този начин -->
+<li><%= task.inspect%></li>
+<% end %>
+ </ul>
+ <%= link_to "Create Task", new_lecture_task_path(@lecture)%> 

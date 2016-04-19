@@ -1,0 +1,6 @@
+<h2>Edit Lecture</h2>
+<%= form_for(@lecture, method: :patch, url: lecture_path(@lecture)) do |f| %> 
+<!--Нямаме task път и за това му подаваме url, където да иде (иначе търси default-eн) -->
+<%= render @lecture, f: f%> 
+<% end %>
+<%= link_to "Destroy", @lecture, method: :delete%>

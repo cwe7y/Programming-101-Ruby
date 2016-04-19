@@ -1,0 +1,10 @@
+<h2>Lectures</h2>
+
+
+<ul>
+
+<% @lectures.each do |lecture| %> <!-- ruby код се пише по този начин -->
+<li><%= lecture.inspect%></li>
+<% end %>
+ </ul>
+ <%= link_to "Create Lecture", new_lecture_path%>

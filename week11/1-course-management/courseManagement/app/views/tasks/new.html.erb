@@ -1,0 +1,11 @@
+<h2>Create Task</h2>
+
+
+<%= form_for(@task, url: lecture_tasks_path(params[:lecture_id])) do |f|%> 
+<!--Нямаме task път и за това му подаваме url, където да иде (иначе търси default-eн) -->
+<%= f.label :name %> <%= f.text_field :name %>
+<%= f.label :description %> <%= f.text_area :description %>
+<%= f.submit  %> 
+
+
+<% end %>
